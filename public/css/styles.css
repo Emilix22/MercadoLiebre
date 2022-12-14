@@ -358,8 +358,12 @@ footer i {
     main section article:hover i {
     transform: rotate(-90deg);
     }
+    main article .nombre {
+        display: block;
+        visibility: hidden;
+    }
     main article:hover .nombre {
-    display: block;
+    visibility: visible;
     }
     main article {
         width: 49%;
