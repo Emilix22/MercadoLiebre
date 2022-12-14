@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --Blanco: white;
+    --Negro: black;
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verede: #39b54a;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: var(--Gris-claro);
+}
+
+/**********************HEADER***************************/
+header {
+    background-color: var(--Amarillo);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 15px;
+    justify-content: center;
+}
+.top-bar img {
+    width: 50%;
+    padding-right: 10px;
+}
+.top-bar p {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+}
+.buscar {
+    width: 50%;
+    position: relative;
+    padding-left: 10px;
+}
+.buscar input {
+    border-radius: 8px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;
+    outline: none;   
+}
+.buscar i{
+    background-color: var(--Blanco);
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+nav {
+    display: none;
+}
+.nav-bar{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.nav-bar li{
+    list-style-type: none;    
+}
+.nav-bar a {
+    text-decoration: none;
+    color: var(--Negro);
+}
+.login-bar{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.login-bar li {
+    list-style-type: none;
+}
+.login-bar a {
+    text-decoration: none;
+    color: var(--Negro);
+}
+.burger-menu{
+    text-align: center;
+}
+.burger-menu i {
+    background-color: var(--Celeste);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    color: var(--Blanco);
+    font-size: 18px;
+}
+
+/**********************MAIN***************************/
+main {
+    margin: auto;
+    width: 90vw;
+}
+.banner img{
+    width: 100%;
+    margin-top: 172.84px;
+}
+main h3 {
+    font-size: 24px;
+}
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main article {
+    background-color: var(--Blanco);
+    margin-bottom: 10px;
+}
+main article a {
+    text-decoration: none;
+}
+main article img {
+    width: 100%;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    color: var(--Verede);
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: var(--Blanco);
+    border-radius: 50%;
+    position: absolute;
+    right: 25px;
+    top: -15px;
+    transition: 500ms;
+}
+
+.descripcion {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+.precio {
+    font-size: 18px;
+    margin: 0px;
+    padding-right: 10px;
+}
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    margin: 0px;
+}
+.nombre {
+    font-weight: bold;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0px;
+    display: none;
+    position: absolute;
+    bottom: 15px; 
+}
+
+/**********************FOOTER***************************/
+footer {
+    text-align: center;
+    background-color: white;
+    color: #666;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+footer article {
+    padding-top: 40px;
+}
+footer article p {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0px;
+}
+footer article h3 {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+footer i:hover {
+    color: #03264C;
+}
+footer i {
+    color: #1259c3;
+    margin-bottom: 10px;
+    font-size: 2em;
+    transition: color 300ms;
+}
+.copyright {
+    text-align: left;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+
+/**********************FORMULARIOS***************************/
+/**********************PRODUCT CREATE Y GENERAL***************************/
+.form-crea-producto {
+    padding: 20px 15px;
+    margin-top: 172.84px;
+}
+.form-control {
+    margin: 15px 0px;
+}
+.form-control label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+    font-weight: bold;
+    position: relative;
+}
+.form-control-oferta {
+    display: flex;
+    align-items: center;
+}
+.form-control-oferta label {
+    font-style: italic;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.txt-control {
+    width: 100%;
+    padding: 8PX;
+    border: none;
+    border-bottom: solid 1px #eac926;
+    background-color: #ebebeb;
+}
+.txt-control:focus {  
+    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 75%);
+    border-radius: 5px;
+    outline: none; 
+}
+.form-boton:hover {
+    background-color: #0022AA;
+}
+.form-boton {
+    background-color: #39b54a;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 300ms; 
+}
+
+/**********************REGISTER***************************/
+.form-register {
+    padding: 15px 15px;
+    margin-top: 172.84px;
+}
+.form-register i {
+    margin-right: 5px;
+    font-size: 14px;
+}
+.form-control-radio {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 15px 0px;
+}
+.form-control-radio label {
+    display: inline;
+    font-style: normal;
+    margin-left: 15px;
+    margin-right: 40px;
+}
+.form-control-checkbox {
+    margin: 15px 0px;
+}
+.form-control-checkbox label {
+    display: inline;   
+}
+.form-botones {
+    text-align: center;
+    padding-top: 15px;
+}
+
+/**********************LOGIN***************************/
+.form-login {
+    padding: 20px 15px;
+    margin-top: 172.84px;
+}
+.icono-login {
+    font-size: 40px;
+    text-align: center;
+}
+
+
+@media (min-width: 426px) {
+    header {
+        width: 100%;
+    }
+    .top-bar {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;    
+    }
+    .top-bar img {
+        max-width: 188px;
+    }
+    .buscar {
+        position:static;
+        display: flex;
+        align-items: center;    
+    }
+    .buscar input {
+        width: 90%;
+        border-radius: 0px;
+        height: 20px;   
+    }
+    .buscar i {
+        position: static;
+        display: block;
+        margin-left: 5px;
+        border: solid 1px black;
+        text-align: center;
+        padding: 3px;
+        width: 20px;
+    }
+    .top-bar p {
+        padding: 0px;
+        text-align: right;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px;
+    }
+    .banner img {
+        margin-top: 120.06px;
+    }
+
+    main article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article:hover i {
+    transform: rotate(-90deg);
+    }
+    main article:hover .nombre {
+    display: block;
+    }
+    main article {
+        width: 49%;
+    }
+    .descripcion {
+        height: 100px;
+    }
+    .tarjetas-footer {
+        display: flex;
+    }
+    
+/**********************MEDIA FORMULARIOS***************************/
+    .form-register, .form-crea-producto, .form-login {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 120.06px;
+    }
+    .form-login {
+        text-align: center;
+    }
+    .form-login .form-control {
+        display: flex;
+        justify-content:center;
+    }
+    
+    .form-control {
+        display: flex;
+        justify-content:space-between;
+        align-items: baseline;
+    }
+    .form-control label {
+        margin: 0px;
+    }
+    .txt-control {
+     width: 77%;
+    }  
+    .form-register h3 {
+        padding-top: 5px;
+    }
+}
+
+
+@media (min-width: 769px) {
+    main article {
+        width: 24%;
+    }
+    nav {
+        font-size: 14px;
+    }
+    .form-register, .form-crea-producto {
+        padding: 20px 250px;
+    }
+    .form-login {
+        padding: 80px 250px;
+    }
+    .txt-control {
+        flex-grow: 1;
+    }
+   .form-control {
+    gap: 5px;
+   }
+}
