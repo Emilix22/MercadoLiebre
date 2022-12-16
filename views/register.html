@@ -60,27 +60,27 @@
     <form action="/" method="get" class="form-register">
         <div class="form-control">    
             <label for="nombreApellido"><i class="fa-solid fa-signature"></i>Nombre y Apellido:</label>
-            <input type="text" name="nombreApellido" placeholder="Juan Perez" class="txt-control">
+            <input type="text" name="nombreApellido" placeholder="Juan Perez" required class="txt-control">
         </div>
 
         <div class="form-control">
             <label for="nombreUsuario"><i class="fa-solid fa-user"></i>Nombre de Usuario:</label>
-            <input type="text" name="nombreUsuario" placeholder= "Juan" class="txt-control">
+            <input type="text" name="nombreUsuario" placeholder= "Juan" required class="txt-control">
         </div>
 
         <div class="form-control">
             <label for="email"><i class="fa-solid fa-envelope"></i>Email:</label>
-            <input type="email" name="email" placeholder="juanperez@mercado.com" class="txt-control">
+            <input type="email" name="email" placeholder="juanperez@mercado.com" required class="txt-control">
         </div>
 
         <div class="form-control"> 
             <label for="fechaNacimiento"><i class="fa-solid fa-calendar"></i>Fecha de Nacimiento:</label>
-            <input type="date" name="fechaNacimiento" class="txt-control">
+            <input type="date" name="fechaNacimiento" required class="txt-control">
         </div>
 
         <div class="form-control">
             <label for="domicilio"><i class="fa-solid fa-location-dot"></i>Domicilio:</label>
-            <input type="text" name="domicilio" placeholder="Av. Liebre 545, Temperley " class="txt-control">
+            <input type="text" name="domicilio" placeholder="Av. Liebre 545, Temperley" required class="txt-control">
         </div>
 
         <h3>Perfil de Usuario</h3>
@@ -127,12 +127,12 @@
 
         <div class="form-control">
             <label for="password"><i class="fa-solid fa-unlock"></i>Contraseña:</label>
-            <input type="password" name="password" placeholder="contraseña" class="txt-control">
+            <input type="password" name="password" placeholder="contraseña" required minlength="8" class="txt-control">
         </div>
         
         <div class="form-control">
             <label for="passwordConfirm"><i class="fa-solid fa-unlock"></i>Confirmar Contraseña:</label>
-            <input type="password" name="passwordConfirm" placeholder="confirmar contraseña" class="txt-control">
+            <input type="password" name="passwordConfirm" placeholder="confirmar contraseña" required class="txt-control">
         </div>
 
         <div class="form-botones">
