@@ -17,39 +17,44 @@
     <main>
         <h3>Basado en tu última visita</h3>
         <section>
-            <% articulos.forEach(articulo => { %>
-                <article>
-                    <a href="#">
-                        <div>
-                            <img src= "/img/products/<%= articulo.imagen %>" alt="cafetera">
-                        </div>
-                        <div class="descripcion">
-                            <i class="fas fa-truck"></i>
-                            <p class="precio"><%= articulo.precio %> </p>
-                            <p class="descuento"><%= articulo.descuento %> </p>
-                            <p class="nombre"><%= articulo.nombre %> </p>
-                        </div>
-                    </a>                   
-                </article>
-            <% }) %>           
+            <% products.forEach(product => { %>
+                <% if (product.category == 'visited') { %>
+                    <article>
+                        <a href="#">
+                            <div>
+                                <img src= "/img/products/<%= product.image %>" alt="cafetera">
+                            </div>
+                            <div class="descripcion">
+                                <i class="fas fa-truck"></i>
+                                <p class="precio"><%= product.price %> </p>
+                                <p class="descuento"><%= product.discount %> </p>
+                                <p class="nombre"><%= product.name %> </p>
+                            </div>
+                        </a>                   
+                    </article>
+                <% } %>
+            <% }) %>    
+                   
         </section> 
 
-        <h3>Sección de Ofertas</h3>
+        <h3 id="ofertas">Sección de Ofertas</h3>
         <section>
-            <% articulos.forEach(articulo => { %>
-                <article>
-                    <a href="#">
-                        <div>
-                            <img src= "/img/products/<%= articulo.imagen %>" alt="cafetera">
-                        </div>
-                        <div class="descripcion">
-                            <i class="fas fa-truck"></i>
-                            <p class="precio"><%= articulo.precio %> </p>
-                            <p class="descuento"><%= articulo.descuento %> </p>
-                            <p class="nombre"><%= articulo.nombre %> </p>
-                        </div>
-                    </a>                   
-                </article>
+            <% products.forEach(product => { %>
+                <% if (product.category == 'in-sale') { %>
+                    <article>
+                        <a href="#">
+                            <div>
+                                <img src= "/img/products/<%= product.image %>" alt="cafetera">
+                            </div>
+                            <div class="descripcion">
+                                <i class="fas fa-truck"></i>
+                                <p class="precio"><%= product.price %> </p>
+                                <p class="descuento"><%= product.discount %> </p>
+                                <p class="nombre"><%= product.name %> </p>
+                            </div>
+                        </a>                   
+                    </article>
+                <% } %>
             <% }) %>       
         </section>
     </main>
